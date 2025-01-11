@@ -1,3 +1,13 @@
+/*
+Covid 19 Data Exploration 
+
+Skills used: Joins, CTE's, Temp Tables, Windows Functions, Aggregate Functions, Creating Views, Converting Data Types
+
+*/
+
+
+
+
 Select*
 From CovidVaccinations$
 Where Continent is null
@@ -181,7 +191,7 @@ From #PercentPopulationVaccinated
 
 
 
---Creaying View to store data for later Visualizations
+--Creating View to store data for later Visualizations
 
 Create View PercentPopulationVaccinated as 
 Select Dea.Continent, Dea.Location, Dea.Date, Dea.Population, Vac.new_vaccinations
@@ -196,3 +206,5 @@ Where Dea.Continent is not null
 
 Select*
 From PercentPopulationVaccinated
+
+
